@@ -32,17 +32,18 @@ background-size: cover;
 }
 
 .btn-home {
-    background-color: #ff784e;
-    color: white;
+    background-color: transparent;
+    color: #ff784e;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border: 2px solid #ff784e;
     font-size: 1em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-home:hover {
-    background-color: #e76d5e;
+    background-color: #ff784e;
+    color: white;
 }
 
 .about-main {
@@ -161,7 +162,7 @@ background-size: cover;
     .member-photo {
         height: 465px;
         background-size: cover;
-        background-position: top;
+        background-position: center;
     }
 }
 
@@ -184,17 +185,18 @@ body {
 }
 
 .btn-home {
-    background-color: #ff784e;
-    color: white;
+    background-color: transparent;
+    color: #ff784e;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border: 2px solid #ff784e;
     font-size: 1em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-home:hover {
-    background-color: #e76d5e;
+    background-color: #ff784e;
+    color: white;
 }
 
 /* Нова секція "Наша команда" */
@@ -297,7 +299,7 @@ body {
 .member-photo {
     height: 208px;
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 .team-member h3 {
