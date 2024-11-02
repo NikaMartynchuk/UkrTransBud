@@ -36,21 +36,36 @@ body {
 }
 
 .contact-main {
-    padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
-.contact-section {
-    margin-bottom: 20px;
+.contact-info, .contact-details {
+    margin-bottom: 30px;
 }
 
-.contact-section h2 {
+.contact-info h2, .contact-details h2 {
     color: #ff784e;
+    font-size: 2em;
 }
 
-.contact-section p {
+.contact-info p, .contact-details p {
     color: #cccccc;
-    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff784e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.map-link:hover {
+    background-color: #e76d5e;
 }
 
 .footer {

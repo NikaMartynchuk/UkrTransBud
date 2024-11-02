@@ -1,0 +1,441 @@
+/* Основні стилі */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/istockphoto-1420678520-612x612.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #ff784e;
+    margin: 0;
+}
+
+.btn-home {
+    background-color: #ff784e;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+    background-color: #e76d5e;
+}
+
+.about-main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/* Секція "Наш Президент" */
+.president {
+    padding: 60px 20px;
+    background-color: #1e1e1e; /* Темний фон для мінімалістичного стилю */
+    color: white;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.president h2 {
+    font-size: 2em;
+    color: #ff784e;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.president-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.president-info {
+    max-width: 450px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #cccccc;
+    text-align: left;
+}
+
+.president-info h3 {
+    font-size: 1.8em;
+    color: #ff784e;
+    margin-bottom: 15px;
+}
+
+.president-photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.president-photo:hover {
+    transform: scale(1.05); /* Легка анімація збільшення при наведенні */
+}
+
+/* Адаптивні стилі */
+@media (max-width: 768px) {
+    .president-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .president-info {
+        max-width: 100%;
+    }
+}
+
+/* Нова секція "Наша історія" */
+.company-history {
+    background: linear-gradient(135deg, rgb(39 46 52 / 80%), rgb(71 71 71 / 80%)), url(./img/istockphoto-1420678520-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+}
+
+.company-history h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.history-content {
+    max-width: 800px; /* Максимальна ширина для тексту */
+    margin: 0 auto; /* Центрування */
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.history-content p {
+    color: #f0f0f0; /* Світлий колір для тексту */
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+    .company-history h2 {
+        font-size: 2em; /* Зменшення шрифту на мобільних */
+    }
+
+    .history-content {
+        font-size: 1em; /* Зменшення шрифту на мобільних */
+    }
+    .member-photo {
+        height: 465px;
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+
+/* Основні стилі */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header h1 {
+    font-size: 2.5em;
+    color: #ff784e;
+    margin: 0;
+}
+
+.btn-home {
+    background-color: #ff784e;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-home:hover {
+    background-color: #e76d5e;
+}
+
+/* Нова секція "Наша команда" */
+.team {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.team h2 {
+    color: #ff784e;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Відстань між картками */
+}
+
+.team-member {
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 280px; /* Фіксована ширина карток */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: justify;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.member-photo {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.member-info {
+    padding: 15px;
+    text-align: left; /* Вирівнювання тексту */
+}
+
+.member-info h3 {
+    color: #ff784e;
+    margin: 0 0 5px;
+    font-size: 1.5em; /* Зменшений шрифт */
+}
+
+.member-info p {
+    color: #dddddd;
+    margin: 5px 0;
+    font-size: 0.9em; /* Зменшений шрифт */
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column; /* Вертикальне вирівнювання для мобільних */
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%; /* Ширина карток для мобільних */
+    }
+}
+
+
+.team {
+    margin-top: 40px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    margin: 20px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #333333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.721);
+    cursor: pointer;
+}
+
+.member-photo {
+    height: 208px;
+    background-size: cover;
+    background-position: top;
+}
+
+.team-member h3 {
+    color: #ff784e;
+    margin: 10px 0 5px;
+        text-align: center;
+
+}
+
+.team-member p {
+    color: #cccccc;
+    margin: 0 10px 10px;
+    text-align: center;
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .company-history h2, .team h2 {
+        font-size: 1.8em;
+    }
+
+    .company-history p {
+        font-size: 1em;
+    }
+
+    .team-member {
+        width: 80%;
+    }
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .company-history h2, .team h2 {
+        font-size: 1.8em;
+    }
+
+    .company-history p {
+        font-size: 1em;
+    }
+
+    .team-member {
+        width: 80%;
+    }
+}
+
+
+
+.footer {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h4,
+.footer-links h4,
+.footer-contact h4 {
+    color: #ff784e;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 0.95em;
+    color: #c0c0c0;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ff784e;
+}
+
+.footer-contact p {
+    color: #c0c0c0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #888888;
+    padding-top: 20px;
+    font-size: 0.85em;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact {
+        min-width: 100%;
+    }
+}
+
+
