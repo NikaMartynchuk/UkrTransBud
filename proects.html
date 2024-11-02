@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наші проекти</title>
+    <link rel="stylesheet" href="proects.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="btn-home">На головну</a>
+        </div>
+    </header>
+    
+        <main class="projects-main">
+            <section class="projects-gallery">
+                <div class="project-card" onclick="openModal('project1')">
+                    <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 1">
+                    <h3>Міст через річку</h3>
+                    <p>Цей проект включає в себе сучасний дизайн та екологічні рішення для зменшення впливу на навколишнє середовище.</p>
+                    <button class="btn-details" onclick="openModal('project1'); event.stopPropagation();">Детальніше</button>
+                </div>
+                <div class="project-card" onclick="openModal('project2')">
+                    <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 2">
+                    <h3>Автомобільний міст</h3>
+                    <p>Складна інженерія та високі технології роблять цей міст одним з найвідоміших у регіоні.</p>
+                    <button class="btn-details" onclick="openModal('project2'); event.stopPropagation();">Детальніше</button>
+                </div>
+                <div class="project-card" onclick="openModal('project3')">
+                    <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 3">
+                    <h3>Пішохідний міст</h3>
+                    <p>Естетичний та функціональний проект, який забезпечує безпечний перехід для пішоходів.</p>
+                    <button class="btn-details" onclick="openModal('project3'); event.stopPropagation();">Детальніше</button>
+                </div>
+                <div class="project-card" onclick="openModal('project4')">
+                    <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 4">
+                    <h3>Міст з кабельним підвішуванням</h3>
+                    <p>Цей міст є символом інноваційних технологій та архітектурної майстерності.</p>
+                    <button class="btn-details" onclick="openModal('project4'); event.stopPropagation();">Детальніше</button>
+                </div>
+                <div class="project-card" onclick="openModal('project5')">
+                    <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 5">
+                    <h3>Міст з підводними опорами</h3>
+                    <p>Унікальний проект, що забезпечує міцність та естетику, використовуючи підводні опори.</p>
+                    <button class="btn-details" onclick="openModal('project5'); event.stopPropagation();">Детальніше</button>
+                </div>
+                <div class="project-card" onclick="openModal('project6')">
+                    <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 6">
+                    <h3>Міст на злітно-посадковій смузі</h3>
+                    <p>Залізничний міст, який сполучає два важливих транспортних вузли.</p>
+                    <button class="btn-details" onclick="openModal('project6'); event.stopPropagation();">Детальніше</button>
+                </div>
+                <div class="project-card" onclick="openModal('project7')">
+                    <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 7">
+                    <h3>Міст для велосипедистів</h3>
+                    <p>Спеціально розроблений міст для забезпечення безпеки велосипедистів.</p>
+                    <button class="btn-details" onclick="openModal('project7'); event.stopPropagation();">Детальніше</button>
+                </div>
+                <div class="project-card" onclick="openModal('project8')">
+                    <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 8">
+                    <h3>Міст з інтегрованим освітленням</h3>
+                    <p>Цей проект використовує інтегроване освітлення для підвищення видимості та безпеки.</p>
+                    <button class="btn-details" onclick="openModal('project8'); event.stopPropagation();">Детальніше</button>
+
+                </div>
+            </div>
+            <div class="project-card" onclick="openModal('project9')">
+                <img src="img/istockphoto-1420678520-612x612.jpg" alt="Проект 8">
+                <h3>Міст з інтегрованим освітленням</h3>
+                <p>Цей проект використовує інтегроване освітлення для підвищення видимості та безпеки.</p>
+                <button class="btn-details" onclick="openModal('project9'); event.stopPropagation();">Детальніше</button>
+            </div>
+                    </section>
+        </main>
+    
+        <!-- Модальне вікно для деталей проекту -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle">Назва проекту</h2>
+                <img id="modalImage" src="" alt="Деталі проекту" style="width: 100%; height: auto;">
+                <p id="modalDescription">Детальний опис проекту.</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h4>Про компанію</h4>
+                    <p>Ми спеціалізуємося на будівництві мостів, об'єднуючи людей і міста з 2000 року. Наша місія — забезпечити надійність і довговічність у кожному проєкті.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Корисні посилання</h4>
+                    <ul>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#services">Послуги</a></li>
+                        <li><a href="proects.html">Проекти</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакти</h4>
+                    <p>Телефон: +380 123 456 789</p>
+                    <p>Email: info@company.com</p>
+                    <p>Адреса: вул. Будівельників, 10, м. Київ</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Компанія. Всі права захищені.</p>
+            </div>
+        </footer>   
+        <script>
+            function openModal(project) {
+                const modal = document.getElementById("myModal");
+                const title = document.getElementById("modalTitle");
+                const image = document.getElementById("modalImage");
+                const description = document.getElementById("modalDescription");
+    
+                // Встановлюємо дані в модальному вікні
+                if (project === 'project1') {
+                    title.innerText = "Міст через річку";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Цей проект включає в себе сучасний дизайн та екологічні рішення для зменшення впливу на навколишнє середовище.Цей проект включає в себе сучасний дизайн та екологічні рішення для зменшення впливу на навколишнє середовище.";
+                } else if (project === 'project2') {
+                    title.innerText = "Автомобільний міст";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Складна інженерія та високі технології роблять цей міст одним з найвідоміших у регіоні.";
+                } else if (project === 'project3') {
+                    title.innerText = "Пішохідний міст";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Естетичний та функціональний проект, який забезпечує безпечний перехід для пішоходів.";
+                } else if (project === 'project4') {
+                    title.innerText = "Міст з кабельним підвішуванням";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Цей міст є символом інноваційних технологій та архітектурної майстерності.";
+                } else if (project === 'project5') {
+                    title.innerText = "Міст з підводними опорами";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Унікальний проект, що забезпечує міцність та естетику, використовуючи підводні опори.";
+                } else if (project === 'project6') {
+                    title.innerText = "Міст на злітно-посадковій смузі";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Залізничний міст, який сполучає два важливих транспортних вузли.";
+                } else if (project === 'project7') {
+                    title.innerText = "Міст для велосипедистів";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Спеціально розроблений міст для забезпечення безпеки велосипедистів.";
+                } else if (project === 'project8') {
+                    title.innerText = "Міст з інтегрованим освітленням";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Цей проект використовує інтегроване освітлення для підвищення видимості та безпеки.";
+                } else if (project === 'project9') {
+                    title.innerText = "Міст з інтегрованим освітленням";
+                    image.src = "img/istockphoto-1420678520-612x612.jpg"; // Замініть на правильний шлях до зображення
+                    description.innerText = "Цей проект використовує інтегроване освітлення для підвищення видимості та безпеки.";
+                }
+    
+                modal.style.display = "block"; // Відкриваємо модальне вікно
+            }
+    
+            function closeModal() {
+                const modal = document.getElementById("myModal");
+                modal.style.display = "none"; // Закриваємо модальне вікно
+            }
+    
+            // Закриття модального вікна при натисканні поза його межами
+            window.onclick = function(event) {
+                const modal = document.getElementById("myModal");
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+</body>
+</html>
