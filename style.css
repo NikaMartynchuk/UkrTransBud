@@ -987,10 +987,10 @@ body {
     transform: translateX(-50px); /* Зсув вліво */
 }
 
-/* Початкове положення для появи справа */
+/* Початкове положення для появи справа
 .fade-in-right {
-    transform: translateX(50px); /* Зсув вправо */
-}
+    transform: translateX(50px);  }/* Зсув вправо */
+*/
 
 /* Анімація при появі в полі зору */
 .visible {
