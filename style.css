@@ -989,7 +989,7 @@ body {
 
 /* Початкове положення для появи справа */
 .fade-in-right {
-    transform: translateX(500px); /* Зсув вправо */
+    transform: translateX(50px); /* Зсув вправо */
 }
 
 /* Анімація при появі в полі зору */
