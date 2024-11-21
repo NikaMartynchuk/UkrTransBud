@@ -120,7 +120,7 @@ background-size: cover;
 
 /* Нова секція "Наша історія" */
 .company-history {
-    background: linear-gradient(135deg, rgb(39 46 52 / 80%), rgb(71 71 71 / 80%)), url(./img/istockphoto-1420678520-612x612.jpg);
+    background: linear-gradient(135deg, rgb(39 46 52 / 80%), rgb(71 71 71 / 80%));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -294,9 +294,26 @@ body {
 }
 
 .member-photo {
-    height: 208px;
+    height: 311px;
     background-size: cover;
     background-position: center;
+}
+
+.btn-modern {
+    align-self: start;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-modern:hover {
+    background-color: #d74011;
+    transform: translateY(-3px);
+    color: #e0e0e0;
+
 }
 
 .team-member h3 {
@@ -438,3 +455,65 @@ body {
 }
 
 
+
+
+
+
+
+.company-history {
+    background: #222; /* Темний фон */
+    padding: 40px; /* Внутрішній відступ */
+    margin: 20px 0; /* Зовнішній відступ */
+    color: #fff; /* Білий текст */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Тінь */
+    position: relative;
+    overflow: hidden; /* Для роботи з псевдоелементами */
+}
+
+.company-history::before {
+    content: ''; /* Додатковий шар */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://via.placeholder.com/1200x600') center/cover no-repeat; /* Зображення на фоні */
+    opacity: 0.15; /* Напівпрозорість */
+    z-index: 1;
+}
+
+.company-history h2 {
+    font-size: 2rem; /* Розмір заголовка */
+    text-align: center; /* Центрування заголовка */
+    margin-bottom: 20px;
+    color: #ff784e; /* Акцентний колір заголовка */
+    position: relative;
+    z-index: 2; /* Поверх фону */
+}
+
+.company-history .history-content {
+    position: relative;
+    z-index: 2; /* Поверх фону */
+}
+
+.company-history p {
+    font-size: 1rem; /* Розмір тексту */
+    line-height: 1.6; /* Міжрядковий інтервал */
+    margin-bottom: 30px;
+    text-align: justify; /* Вирівнювання тексту */
+}
+
+.company-history .btn-modern {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ec4b1a; /* Колір кнопки */
+    color: #fff; /* Колір тексту кнопки */
+    text-decoration: none; /* Забрати підкреслення */
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Анімація кнопки */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.company-history .btn-modern:hover {
+    background-color: #d13100; /* Зміна кольору при наведенні */
+}
