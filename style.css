@@ -66,7 +66,7 @@ body {
 .hero {
     position: relative;
     height: 100vh; /* Висота секції на весь екран */
-    background-image: url('img/golovna.jpg'); /* Зображення фону */
+    background-image: url('img/gollovna1.jpg'); /* Зображення фону */
     background-size: cover; /* Заповнити секцію зображенням */
     background-position: center; /* Центрувати зображення */
     color: #ffffff; /* Колір тексту */
