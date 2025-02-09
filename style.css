@@ -84,7 +84,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, #1b1b1b, rgba(0, 0, 0, 0.566));
+    background: linear-gradient(to bottom, #1e1e1e, rgba(0, 0, 0, 0.387));
         z-index: 1; /* Розташування поверх зображення */
 }
 
