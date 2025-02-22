@@ -67,8 +67,8 @@ h1 {
 .services-list {
 
     list-style: none;
-    padding-top: 30px;
-    margin: 20px 0;
+padding: 0;   
+ margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
