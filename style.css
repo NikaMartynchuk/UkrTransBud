@@ -96,6 +96,7 @@ body {
 .hero-title {
     font-size: 3rem; /* Розмір заголовка */
     margin-bottom: 20px; /* Відступи */
+    max-width: 860px;
 }
 
 .hero-description {
